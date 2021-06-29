@@ -27,6 +27,7 @@ body {
     border-radius: 12px;
     padding: 0 16px 24px 16px;
     font-size: 12px;
+    width: 100%;
 }
 
 /* -------------------- */
@@ -53,6 +54,20 @@ dt {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
+    cursor: pointer;
+}
+dt.active {
+    font-weight: 700;
+}
+dd {
+    display: none;
+}
+dd.active {
+    display: block;
+}
+hr {
+    border-top: .5px solid hsl(240, 5%, 91%);
 }
 /* -------------------- */
 /* FOOTER */
