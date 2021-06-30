@@ -32,11 +32,15 @@ body {
     font-size: 12px;
     width: 100%;
     max-width: 1000px;
+    z-index: 10;
 }
 
 /* -------------------- */
 /* IMAGES */
 /* -------------------- */
+.img-box {
+    display: none;
+}
 .card-image {
     position: absolute;
     background-image: url('../images/illustration-woman-online-mobile.svg');
@@ -46,6 +50,7 @@ body {
     width: 266px;
     top: -100px;
     left: calc(50% - (290px / 2));
+    z-index: 1;
 }
 
 .main-img-desktop {
@@ -118,7 +123,7 @@ hr {
     color: white;
 }
 /* -------------------- */
-/* MEDIA QUERIES */
+/* RESPONSIVE */
 /* -------------------- */
 @media (min-width: 768px) {
     .card {
@@ -142,8 +147,12 @@ hr {
         left: -60px;
     }
 
-    .card-image img {
-        position: static;
+    .img-box {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        left: -25px;
+        z-index: 1000;
     }
 
     .faq {
