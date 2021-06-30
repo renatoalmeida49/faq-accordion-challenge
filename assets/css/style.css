@@ -37,10 +37,19 @@ body {
 /* -------------------- */
 /* IMAGES */
 /* -------------------- */
-.main-img {
+.card-image {
     position: absolute;
+    background-image: url('../images/illustration-woman-online-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 196px;
+    width: 266px;
     top: -100px;
     left: calc(50% - (290px / 2));
+}
+
+.main-img-desktop {
+    display: none;
 }
 
 .main-img-shadow {
@@ -114,20 +123,38 @@ hr {
 @media (min-width: 768px) {
     .card {
         display: flex;
+        flex-direction: row-reverse;
         background-image: url('../images/bg-pattern-desktop.svg');
-        background-position: -60% 60%;
-        padding-top: 24px;
+        background-position: -1640% 68%;
+        padding: 60px;
+        font-size: 120%;
+        overflow: hidden;
     }
 
-    .card div {
-        width: 50%;
+    .card-image {
+        position: absolute;
+        background-image: url('../images/illustration-woman-online-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 359px;
+        width: 472px;
+        top: calc(50%  - (386px / 2));
+        left: -60px;
     }
 
     .card-image img {
         position: static;
     }
 
+    .faq {
+        width: 50%;
+    }
+
     h1 {
         text-align: initial;
+    }
+
+    dd {
+        line-height: 20px;
     }
 }
