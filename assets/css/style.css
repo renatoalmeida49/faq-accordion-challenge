@@ -77,6 +77,9 @@ dt {
     transition: all .5s;
     color: hsl(237, 12%, 33%);
 }
+dt:hover {
+    color: hsl(14, 88%, 65%);
+}
 dt.active {
     font-weight: 700;
 }
@@ -128,30 +131,29 @@ hr {
 @media (min-width: 768px) {
     .card {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         background-image: url('../images/bg-pattern-desktop.svg');
         background-position: -1640% 68%;
-        padding: 60px;
+        padding: 60px 60px 60px 0;
         font-size: 120%;
-        overflow: hidden;
     }
 
     .card-image {
-        position: absolute;
+        position: static;
         background-image: url('../images/illustration-woman-online-desktop.svg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 2800% 0%;
         height: 359px;
-        width: 472px;
+        width: 50%;
         top: calc(50%  - (386px / 2));
-        left: -60px;
+
     }
 
     .img-box {
         display: block;
         position: absolute;
-        bottom: 40px;
-        left: -25px;
+        bottom: 132px;
+        left: -82px;
         z-index: 1000;
     }
 
