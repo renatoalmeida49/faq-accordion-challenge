@@ -55,8 +55,8 @@ Add the use of SASS/SCSS to a better CSS file.
 ### Useful resources
 
 - [Background Gradient](https://www.w3schools.com/css/css3_gradients.asp) - To make the background of the website. I didn't remember how to use it. Here I found really helpful resources.
-- [The <dl> tag](https://www.w3schools.com/tags/tag_dl.asp) - This is something we really should be aware: the HTML needs a good semantic. Of course everything can be done using <div> and <span>, but it's important to know the tags and use them correctly to better acessibility and search tools.
-- [Styling the <hr> tag](https://www.w3schools.com/howto/howto_css_style_hr.asp) - A really simple tag, but got me stuck to styling. Once again a really good link to show me how to style properly.
+- [The dl tag](https://www.w3schools.com/tags/tag_dl.asp) - This is something we really should be aware: the HTML needs a good semantic. Of course everything can be done using <div> and <span>, but it's important to know the tags and use them correctly to better acessibility and search tools.
+- [Styling the hr tag](https://www.w3schools.com/howto/howto_css_style_hr.asp) - A really simple tag, but got me stuck to styling. Once again a really good link to show me how to style properly.
 
 ## Author
 
