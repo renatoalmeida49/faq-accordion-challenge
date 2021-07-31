@@ -1,4 +1,4 @@
-questions = document.querySelectorAll('dt')
+questions = document.querySelectorAll('.question')
 
 questions.forEach(question => {
     question.addEventListener('click', () => {
