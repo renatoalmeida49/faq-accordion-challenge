@@ -64,11 +64,11 @@ body {
 /* -------------------- */
 /* TEXT_CARD */
 /* -------------------- */
-h1 {
+.title {
     text-align: center;
     margin: 24px 0;
 }
-dt {
+.question {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,22 +77,22 @@ dt {
     transition: all .5s;
     color: hsl(237, 12%, 33%);
 }
-dt:hover {
+.question:hover {
     color: hsl(14, 88%, 65%);
 }
-dt.active {
+.question.active {
     font-weight: 700;
 }
-dt img.active {
+.question img.active {
     transform: rotate(180deg);
 }
-dd {
+.answer {
     display: none;
     padding-bottom: 24px;
     color: hsl(240, 6%, 50%);
     line-height: 15px;
 }
-dd.active {
+.answer.active {
     display: block;
     animation: slideDown .5s forwards;
 }
@@ -107,8 +107,8 @@ dd.active {
         opacity: 1;
     }
 }
-hr {
-    border-top: .5px solid hsl(240, 5%, 91%);
+.line {
+    border: .5px solid hsl(240, 5%, 91%);
 }
 /* -------------------- */
 /* FOOTER */
@@ -161,11 +161,11 @@ hr {
         width: 50%;
     }
 
-    h1 {
+    .title {
         text-align: initial;
     }
 
-    dd {
+    .answer {
         line-height: 20px;
     }
 }
